@@ -18,19 +18,12 @@ public class TituloService {
     private TituloRepository tituloRepository;
 
     public TituloDto obtenerFrase() {
-        int cantidadRegistros = tituloRepository.cantidadRegistros();
-        int numeroAleatorio = random.nextInt(cantidadRegistros);
-        Optional<Titulo> titulo = tituloRepository.findAll().stream()
-                .skip(numeroAleatorio)
-                .findFirst();
-        if (titulo.isPresent()) {
-            Titulo t = titulo.get();
-            return new TituloDto(t.getTitulo(),
-                    t.getFrase(),
-                    t.getPersonaje(),
-                    t.getPoster());
-        }
-        return null;
+        Titulo titulo = tituloRepository.obtenerRegistroAleatorio();
+        return new TituloDto(
+                titulo.getTitulo(),
+                titulo.getFrase(),
+                titulo.getPersonaje(),
+                titulo.getPoster());
     }
 }
 

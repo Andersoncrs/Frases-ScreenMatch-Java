@@ -7,7 +7,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface TituloRepository extends JpaRepository<Titulo, Long> {
 
-    @Query(value = "SELECT COUNT(t) FROM Titulo AS t")
-    int cantidadRegistros();
+    @Query(value = "SELECT t FROM Titulo As t ORDER BY function('RANDOM') LIMIT 1")
+    Titulo obtenerRegistroAleatorio();
 
 }
