@@ -13,7 +13,7 @@ public class TituloController {
     TituloService tituloService;
 
     @GetMapping("/series/frases")
-    public TituloDto obtenerFrase(){
+    public TituloDto obtenerFrase() {
         return tituloService.obtenerFrase();
     }
 }
