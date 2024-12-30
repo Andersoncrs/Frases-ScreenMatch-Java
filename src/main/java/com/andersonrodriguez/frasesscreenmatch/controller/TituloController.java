@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TituloController {
 
     @Autowired
-    TituloService tituloService;
+    private TituloService tituloService;
 
     @GetMapping("/series/frases")
     public TituloDto obtenerFrase() {

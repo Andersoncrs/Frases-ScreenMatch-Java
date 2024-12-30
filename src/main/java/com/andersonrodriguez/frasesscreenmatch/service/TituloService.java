@@ -15,7 +15,7 @@ public class TituloService {
     Random random = new Random();
 
     @Autowired
-    TituloRepository tituloRepository;
+    private TituloRepository tituloRepository;
 
     public TituloDto obtenerFrase() {
         int cantidadRegistros = tituloRepository.cantidadRegistros();
