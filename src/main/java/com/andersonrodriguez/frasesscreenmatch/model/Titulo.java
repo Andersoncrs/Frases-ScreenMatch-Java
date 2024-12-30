@@ -13,10 +13,6 @@ public class Titulo {
     private String personaje;
     private String poster;
 
-    public Long getId() {
-        return id;
-    }
-
     public String getTitulo() {
         return titulo;
     }
