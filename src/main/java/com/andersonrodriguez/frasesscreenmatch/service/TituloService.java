@@ -23,7 +23,7 @@ public class TituloService {
         Optional<Titulo> titulo = tituloRepository.findAll().stream()
                 .skip(numeroAleatorio)
                 .findFirst();
-        if(titulo.isPresent()) {
+        if (titulo.isPresent()) {
             Titulo t = titulo.get();
             return new TituloDto(t.getTitulo(),
                     t.getFrase(),
