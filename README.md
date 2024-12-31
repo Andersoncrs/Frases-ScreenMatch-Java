@@ -54,6 +54,10 @@ Esta API proporciona frases aleatorias junto con información adicional, como el
 4. Ejecuta la clase `FrasesscreenmatchApplication`.
 5. Accede al endpoint `/series/frases` desde Postman, tu navegador o el frontend conectado.
 
+## 🖥️ Imágenes del Proyecto
+![](./img/ScreenMatch.png)
+![](./img/ScreenMatch2.png)
+
 ## 📌 Notas Adicionales
 
 - La conexión con el frontend es esencial para visualizar correctamente las frases con estilos y gráficos. Por favor, asegúrate de que el servidor del frontend esté activo y funcionando en `http://127.0.0.1:5500`.
